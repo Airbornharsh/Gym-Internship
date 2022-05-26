@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assests/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <title>GYMANISM</title>
   </head>
   <body>
@@ -12,17 +16,27 @@
       <div class="nav_logo">
         <h1>GYMANISM</h1>
       </div>
-      <div class="nav_middle">
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Services</a></li>
-          <li><a href="">Products</a></li>
-        </ul>
-      </div>
-      <div class="nav_signUp">
-        <button id="sign_up">Sign Up</button>
-      </div>
+        <div class="nav_middle">
+          <div class="nav_middle_button_close" id="nav_middle_button_close">
+            <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48" >
+              <path
+                d="M12.45 37.65 10.35 35.55 21.9 24 10.35 12.45 12.45 10.35 24 21.9 35.55 10.35 37.65 12.45 26.1 24 37.65 35.55 35.55 37.65 24 26.1Z" fill="white"
+              />
+            </svg>
+          </div>
+          <div class="nav_middle_button_open" id="nav_middle_button_open">
+            <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48" >
+              <path d="M6 36V33H42V36ZM6 25.5V22.5H42V25.5ZM6 15V12H42V15Z" fill="white" />
+            </svg>
+          </div>
+          <ul id="navigating_items" class="fadein">
+            <li id="nav_home"><a href="">Home</a></li>
+            <li id="nav_about"><a href="">About</a></li>
+            <li id="nav_services"><a href="">Services</a></li>
+            <li id="nav_products"><a href="">Products</a></li>
+            <li id="sign_up_container"><button id="sign_up">Sign Up</button></li>
+          </ul>
+        </div>
     </nav>
     <div id="sign_up_template">
       <form action="submit">

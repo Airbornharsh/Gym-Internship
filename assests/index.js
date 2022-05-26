@@ -1,4 +1,5 @@
 import Header from "./Javascript/Header.js";
+import Navigate from "./Javascript/Navigate.js";
 import SigningUp from "./Javascript/SigningUp.js";
 
 class Working {
@@ -19,6 +20,7 @@ class Working {
 class App {
   static init() {
     const working = new Working();
+    new Navigate();
     new Header();
     new SigningUp(working.isLogined);
   }
