@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cairo:wght@700&family=JetBrains+Mono&family=Oswald&family=Roboto&family=Roboto+Condensed&family=Roboto+Slab&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  /* background-color: gray; */
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  z-index: 1;
+}
+
+.nav_logo {
+  margin-left: 2vw;
+  color: white;
+  font-family: "Archivo Black";
+  font-style: normal;
+  font-weight: 900;
+}
+
+.nav_middle ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_middle ul li {
+  list-style: none;
+  margin: 5vw;
+}
+
+.nav_middle ul li a {
+  text-decoration: none;
+  color: white;
+  color: #acacac;
+  font-family: "Cairo";
+  font-style: normal;
+}
+
+.nav_signUp {
+  margin-right: 2vw;
+}
+
+.nav_signUp button {
+  padding: 0 6px;
+  border-radius: 6px;
+  font-family: "Cairo";
+  font-weight: 200;
+  cursor: pointer;
+}
+
+#signed_up {
+  position: absolute;
+  color: white;
+  font-size: 1rem;
+  font-family: "Archivo Black";
+  font-weight: 100;
+  top: 100px;
+}
+
+header {
+  max-height: 620px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+header img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 700px;
+  top: -40px;
+  z-index: -1;
+}
+
+header .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  text-align: center;
+  height: 400px;
+}
+
+header .text_heading {
+  margin-top: 200px;
+  margin-bottom: 40px;
+  font-size: 2rem;
+  font-family: sans-serif;
+  transition: all 1s;
+}
+
+header .text_description {
+  font-size: 1.3rem;
+  font-family: "JetBrains Mono", monospace;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes textHeading {
+  from {
+    margin-top: 0px;
+  }
+  to {
+    margin-top: 200px;
+  }
+}
+
+.textHeading {
+  animation-name: textHeading;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+#sign_up_template form {
+  width: 100vw;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1rem;
+}
+
+#sign_up_template form ul li {
+  width: 70vw;
+  margin-bottom: 15px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#sign_up_template form ul li label {
+  font-size: 1.2rem;
+  font-family: "Archivo Black";
+}
+
+#sign_up_template form ul li input {
+  /* font-family: 'Oswald';
+    transform: scaleX(1.3); */
+  font-weight: 540;
+  font-size: 1.2rem;
+  padding: 0 5px;
+}
+
+#sign_up_template form button {
+  padding: 4px;
+  border-radius: 6px;
+  cursor: pointer;
+}
