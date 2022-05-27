@@ -1,16 +1,13 @@
-class AddItem {
-  constructor() {
+import ShoppingRender from "./ShoppingRender.js";
+
+class AddItem extends ShoppingRender{
+    constructor() {
+        super();
     this.productAdd = document.querySelectorAll(
       "#products_bottom_List li .product_addtocart"
     );
-    this.products = document.querySelectorAll("#products_bottom_List li");
-    this.productTemplate = document.querySelector("#product_template li");
-    this.renderLocation = document.getElementById("product_list_render");
-    this.totalAmountEl = document.querySelector(
-      "#shopping_cart .total_amount_rate"
-    );
-    this.totalAmount = 0;
-    this.totalBuy = document.getElementById("total_buy_button");
+      this.products = document.querySelectorAll("#products_bottom_List li");
+      this.addedAlert = document.getElementById("added_to_cart");
     this.clicked();
     this.totalBuyFn();
   }
@@ -36,35 +33,15 @@ class AddItem {
       productName: productName,
       productPrice: productPrice,
     };
+    this.alert();
     this.render();
   }
 
-  render() {
-    let productClone = this.productTemplate.cloneNode(true);
-    productClone.querySelector("img").src = this.productData.src;
-    productClone.querySelector(".details h5").textContent =
-      this.productData.productName;
-    productClone.querySelector(".details div .amount").textContent =
-      this.productData.productPrice;
-    this.totalUpdate();
-    this.renderLocation.append(productClone);
-  }
-
-  totalUpdate() {
-    this.totalAmount += parseInt(this.productData.productPrice);
-    this.totalAmountEl.textContent = this.totalAmount;
-  }
-
-  totalBuyFn() {
-    this.totalBuy.addEventListener("click", () => {
-      if (this.totalAmount != 0) {
-        alert(`Bought Product of Rs${this.totalAmount}`);
-          console.log(this.renderLocation.firstChild);
-        while (this.renderLocation.firstChild) {
-          this.renderLocation.removeChild(this.renderLocation.firstChild);
-        }
-      }
-    });
+  alert() {
+    this.addedAlert.style.display = "block";
+    setTimeout(() => {
+      this.addedAlert.style.display = "none";
+    }, 800);
   }
 }
 

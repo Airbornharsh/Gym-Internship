@@ -2,6 +2,7 @@ import Header from "./Javascript/Header.js";
 import Navigate from "./Javascript/Navigate.js";
 import SigningUp from "./Javascript/SigningUp.js";
 import Shopping from "./Javascript/Shopping/Shopping.js";
+import ProductRender from "./Javascript/Products/ProductRender.js";
 
 class Working {
   constructor() {
@@ -24,6 +25,7 @@ class App {
     new Navigate();
     new Header();
     new SigningUp(working.isLogined);
+    new ProductRender();
     new Shopping();
   }
 }

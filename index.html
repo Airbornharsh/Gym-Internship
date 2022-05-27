@@ -249,96 +249,6 @@
         </div>
         <div class="products_bottom center">
           <ul id="products_bottom_List">
-            <li class="center">
-              <img
-                src="./assests/images/Product/intenza-fitness-fgerG55yoeU-unsplash.jpg"
-                alt=""
-              />
-              <p class="product_name">Towels</p>
-              <div class="product_price center">
-                <p class="product_price_symbol">Rs</p>
-                <p class="product_price_rate">400</p>
-              </div>
-              <div class="buttons center">
-                <button class="product_buynow">Buy Now</button>
-                <button class="product_addtocart">Add to Cart</button>
-              </div>
-            </li>
-            <li class="center">
-              <img
-                src="./assests/images/Product/ctrl-a-meal-replacement-03e4RajfFAE-unsplash.jpg"
-                alt=""
-              />
-              <p class="product_name">Protein Shake</p>
-              <div class="product_price center">
-                <p class="product_price_symbol">Rs</p>
-                <p class="product_price_rate">1400</p>
-              </div>
-              <div class="buttons center">
-                <button class="product_buynow">Buy Now</button>
-                <button class="product_addtocart">Add to Cart</button>
-              </div>
-            </li>
-            <li class="center">
-              <img
-                src="./assests/images/Product/c-d-x-PDX_a_82obo-unsplash.jpg"
-                alt=""
-              />
-              <p class="product_name">Headphones</p>
-              <div class="product_price center">
-                <p class="product_price_symbol">Rs</p>
-                <p class="product_price_rate">1500</p>
-              </div>
-              <div class="buttons center">
-                <button class="product_buynow">Buy Now</button>
-                <button class="product_addtocart">Add to Cart</button>
-              </div>
-            </li>
-            <li class="center">
-              <img
-                src="./assests/images/Product/jed-owen-PpzBE1hWeGI-unsplash.jpg"
-                alt=""
-              />
-              <p class="product_name">Buffel Bag</p>
-              <div class="product_price center">
-                <p class="product_price_symbol">Rs</p>
-                <p class="product_price_rate">600</p>
-              </div>
-              <div class="buttons center">
-                <button class="product_buynow">Buy Now</button>
-                <button class="product_addtocart">Add to Cart</button>
-              </div>
-            </li>
-            <li class="center">
-              <img
-                src="./assests/images/Product/steve-johnson-N-MqWXXZvNY-unsplash.jpg"
-                alt=""
-              />
-              <p class="product_name">Water Bottle</p>
-              <div class="product_price center">
-                <p class="product_price_symbol">Rs</p>
-                <p class="product_price_rate">800</p>
-              </div>
-              <div class="buttons center">
-                <button class="product_buynow">Buy Now</button>
-                <button class="product_addtocart">Add to Cart</button>
-              </div>
-            </li>
-            <li class="center">
-              <img
-                src="./assests/images/Product/denny-muller-mGP8gyGb8zY-unsplash.jpg"
-                alt=""
-              />
-              <p class="product_name">Protein Bar</p>
-              <div class="product_price center">
-                <p class="product_price_symbol">Rs</p>
-                <p class="product_price_rate">500</p>
-              </div>
-              <div class="buttons center">
-                <button class="product_buynow">Buy Now</button>
-                <button class="product_addtocart">Add to Cart</button>
-              </div>
-            </li>
           </ul>
         </div>
       </div>
@@ -407,6 +317,7 @@
     <div id="shopping_cart" class="center">
       <h2>Shopping List</h2>
       <ul id="product_list_render" class="center">
+        
       </ul>
       <div class="total_buy">
         <p class="total_amount">Total Amount</p>
@@ -416,23 +327,40 @@
           <button id="total_buy_button">Buy Now</button>
         </div>
       </div>
-      <svg
-      id="shopping_cart_close"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M12.45 37.65 10.35 35.55 21.9 24 10.35 12.45 12.45 10.35 24 21.9 35.55 10.35 37.65 12.45 26.1 24 37.65 35.55 35.55 37.65 24 26.1Z"
-        fill="gray"
-      />
-    </svg>
+      <svg id="shopping_cart_close" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M12.45 37.65 10.35 35.55 21.9 24 10.35 12.45 12.45 10.35 24 21.9 35.55 10.35 37.65 12.45 26.1 24 37.65 35.55 35.55 37.65 24 26.1Z"
+          fill="gray"
+        />
+      </svg>
     </div>
+
+    <div id="added_to_cart">
+      ADDED TO CART
+    </div>
+
+    <!-- Template Section -->
+    <ul id="product_render_template">
+      <li class="center">
+        <img src="" alt="" />
+        <p class="product_name"></p>
+        <div class="product_price center">
+          <p class="product_price_symbol">Rs</p>
+          <p class="product_price_rate"></p>
+        </div>
+        <div class="buttons center">
+          <button class="product_buynow">Buy Now</button>
+          <button class="product_addtocart">Add to Cart</button>
+        </div>
+      </li>
+    </ul>
 
     <ul id="product_template">
       <li class="center">
-        <img
-          src=""
-          alt=""
-        />
+        <div class="product_remove_container">
+        <img src="" alt="" />
+        <button class="product_remove">Remove</button>
+        </div>
         <div class="details">
           <h5></h5>
           <div class="amount_title center">
