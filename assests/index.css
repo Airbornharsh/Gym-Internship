@@ -320,7 +320,7 @@ header .text_description {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 40vw;
+  margin-left: 25vw;
   margin-top: 8rem;
 }
 
@@ -481,6 +481,10 @@ footer .footer_child_child_li a {
   .nav_middle ul {
     flex-direction: column;
   }
+
+  .services_bottom {
+margin-left: 20vw;
+}
 
   footer .footer_child_quotes h4 {
     font-size: 1rem;
