@@ -25,6 +25,7 @@ class SigningUp {
 
   logDisplay() {
     if (this.isLogined) {
+      document.getElementById("sign_up_container").style.display = "none";
       this.signUpBt.style.display = "none";
       this.signedUp.textContent ="Hii " +
         JSON.parse(localStorage.getItem("airo")).name;

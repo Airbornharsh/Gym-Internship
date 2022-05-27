@@ -1,6 +1,7 @@
 import Header from "./Javascript/Header.js";
 import Navigate from "./Javascript/Navigate.js";
 import SigningUp from "./Javascript/SigningUp.js";
+import Shopping from "./Javascript/Shopping/Shopping.js";
 
 class Working {
   constructor() {
@@ -23,6 +24,7 @@ class App {
     new Navigate();
     new Header();
     new SigningUp(working.isLogined);
+    new Shopping();
   }
 }
 
