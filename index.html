@@ -16,46 +16,65 @@
       <div class="nav_logo">
         <h1>GYMANISM</h1>
       </div>
-        <div class="nav_middle">
-          <div class="nav_middle_button_close" id="nav_middle_button_close">
-            <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48" >
-              <path
-                d="M12.45 37.65 10.35 35.55 21.9 24 10.35 12.45 12.45 10.35 24 21.9 35.55 10.35 37.65 12.45 26.1 24 37.65 35.55 35.55 37.65 24 26.1Z" fill="white"
-              />
-            </svg>
-          </div>
-          <div class="nav_middle_button_open" id="nav_middle_button_open">
-            <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48" >
-              <path d="M6 36V33H42V36ZM6 25.5V22.5H42V25.5ZM6 15V12H42V15Z" fill="white" />
-            </svg>
-          </div>
-          <ul id="navigating_items" class="fadein">
-            <li id="nav_home"><a href="">Home</a></li>
-            <li id="nav_about"><a href="">About</a></li>
-            <li id="nav_services"><a href="">Services</a></li>
-            <li id="nav_products"><a href="">Products</a></li>
-            <li id="sign_up_container"><button id="sign_up">Sign Up</button></li>
-          </ul>
+      <div class="nav_middle">
+        <div class="nav_middle_button_close" id="nav_middle_button_close">
+          <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+            <path
+              d="M12.45 37.65 10.35 35.55 21.9 24 10.35 12.45 12.45 10.35 24 21.9 35.55 10.35 37.65 12.45 26.1 24 37.65 35.55 35.55 37.65 24 26.1Z"
+              fill="white"
+            />
+          </svg>
         </div>
+        <div class="nav_middle_button_open" id="nav_middle_button_open">
+          <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+            <path
+              d="M6 36V33H42V36ZM6 25.5V22.5H42V25.5ZM6 15V12H42V15Z"
+              fill="white"
+            />
+          </svg>
+        </div>
+        <ul id="navigating_items" class="fadein">
+          <li id="nav_home">Home</li>
+          <li id="nav_about">About</li>
+          <li id="nav_services">Services</li>
+          <li id="nav_products">Products</li>
+          <li id="sign_up_container"><button id="sign_up">Sign Up</button></li>
+        </ul>
+      </div>
     </nav>
     <div id="sign_up_template">
       <form action="submit">
         <ul>
           <li>
             <label for="name">Name:</label>
-            <input type="text" name="" id="sign_up_name" />
+            <input type="text" name="" id="sign_up_name" placeholder="Name" />
           </li>
           <li>
             <label for="email">Email:</label>
-            <input type="email" name="" id="sign_up_email" />
+            <input
+              type="email"
+              name=""
+              id="sign_up_email"
+              placeholder="Email"
+            />
           </li>
           <li>
             <label for="password">Password:</label>
-            <input type="password" name="" id="sign_up_password_1" />
+            <input
+              type="password"
+              name=""
+              id="sign_up_password_1"
+              placeholder="PassWord"
+            />
           </li>
           <li>
             <label for="password">Confirm Password:</label>
-            <input type="password" name="" id="sign_up_password_2" />
+            <input
+              type="password"
+              name=""
+              id="sign_up_password_2"
+              placeholder="PassWord"
+            />
           </li>
         </ul>
         <button type="submit" id="sign_up_submit">Submit</button>
@@ -72,7 +91,7 @@
         <div id="header_text_heading" class="text_heading textHeading">
           <h2>Workability</h2>
         </div>
-        <div id="header_text_description" class="text_description fade">
+        <div id="header_text_description" class="text_description fadeout">
           <p>
             Success usually comes to those who are too busy to be looking for
             it.
@@ -80,8 +99,136 @@
         </div>
       </div>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+      <div id="about_container">
+        <div class="about_top">
+          <h3 class="about_top_heading">About Us</h3>
+          <p class="about_top_description">For 20 years helping customers reach their fitness goals has been at the heart of what we do and why we do it! We live and breathe our six core values and four brand promises  — which speak of our commitment to our customers, staff, the industry and our business as a whole.</p>
+        </div>
+        <div class="about_bottom">
+          <ul class="about_bottom_item_container">
+            <li class="about_bottom_item">
+              <img
+                src="./assests/images/aboutImages/support_agent_FILL0_wght400_GRAD0_opsz48.svg"
+                alt=""
+              />
+              <h5>Customer Service</h5>
+              <p>
+                Customers are why we exist and we’re passionate about delivering
+                exceptional, personalised customer service to all.
+              </p>
+            </li>
+            <li class="about_bottom_item">
+              <img
+                src="./assests/images/aboutImages/chat_FILL0_wght400_GRAD0_opsz48.svg"
+                alt=""
+              />
+              <h5>Communication</h5>
+              <p>
+                We believe open, direct and supportive communication is the
+                foundation of any successful organisation.
+              </p>
+            </li>
+            <li class="about_bottom_item">
+              <img
+                src="./assests/images/aboutImages/electric_bolt_FILL0_wght400_GRAD0_opsz48.svg"
+                alt=""
+              />
+              <h5>Nimbagility</h5>
+              <p>
+                Invented by our company directors, Nimbagility reflects the
+                ability to remain nimble and agile through lean, efficient
+                actions.
+              </p>
+            </li>
+            <li class="about_bottom_item">
+              <img
+                src="./assests/images/aboutImages/group_FILL0_wght400_GRAD0_opsz48.svg"
+                alt=""
+              />
+              <h5>Teamwork</h5>
+              <p>
+                We’re committed to common goals, with effective communication
+                and accountability making our team achieve greater results.
+              </p>
+            </li>
+            <li class="about_bottom_item">
+              <img
+                src="./assests/images/aboutImages/flag_FILL0_wght400_GRAD0_opsz48.svg"
+                alt=""
+              />
+              <h5>Be the change you seek</h5>
+              <p>
+                We believe we should all take ownership and have the courage to
+                lead change, creating a better experience for our people and the
+                customers we serve.
+              </p>
+            </li>
+            <li class="about_bottom_item">
+              <img
+                src="./assests/images/aboutImages/rocket_launch_FILL0_wght400_GRAD0_opsz48.svg"
+                alt=""
+              />
+              <h5>Innovation</h5>
+              <p>
+                To help turn our ideas into reality, we embrace a culture of
+                creative innovation in our people, processes and products.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="services_container">
+      </div>
+      <div id="products_container"></div>
+    </main>
+    <footer>
+      <ul class="footer_child_ul">
+        <div class="footer_child_quotes">
+          <h4>GYMANISM</h4>
+          <p>
+            I have nothing in common with lazy people who blame others for their
+            lack of success. Great things come from hard work and perseverance.
+            No excuses.
+          </p>
+        </div>
+        <li class="footer_child_li">
+          <ul class="footer_child_child_ul">
+            <li class="footer_child_child_li footer_child_child_heading">
+              Social
+            </li>
+            <li class="footer_child_child_li"><a href="">Instagram</a></li>
+            <li class="footer_child_child_li"><a href="">Facebook</a></li>
+            <li class="footer_child_child_li"><a href="">Twitter</a></li>
+            <li class="footer_child_child_li"><a href="">Youtube</a></li>
+          </ul>
+        </li>
+        <li class="footer_child_li">
+          <ul class="footer_child_child_ul">
+            <li class="footer_child_child_li footer_child_child_heading">
+              Heading
+            </li>
+            <li class="footer_child_child_li">
+              <a href="https://goo.gl/maps/DbczDkzVAk5b7Mbj7" >Location</a>
+            </li>
+            <li class="footer_child_child_li">Link 7</li>
+            <li class="footer_child_child_li">Link 8</li>
+            <li class="footer_child_child_li">Link 9</li>
+          </ul>
+        </li>
+        <li class="footer_child_li">
+          <ul class="footer_child_child_ul">
+            <li class="footer_child_child_li footer_child_child_heading">
+              Heading
+            </li>
+            <li class="footer_child_child_li">Link 11</li>
+            <li class="footer_child_child_li">Link 12</li>
+            <li class="footer_child_child_li">Link 13</li>
+            <li class="footer_child_child_li">Link 14</li>
+          </ul>
+        </li>
+      </ul>
+    </footer>
     <script src="./assests/index.js" type="module"></script>
   </body>
 </html>

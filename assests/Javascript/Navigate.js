@@ -4,7 +4,8 @@ import Navigation from "./Navigation.js";
 
 class Navigate {
     constructor() {
-        new NavigateButton();        
+        new NavigateButton();
+        new Navigation();
     }
 }
 

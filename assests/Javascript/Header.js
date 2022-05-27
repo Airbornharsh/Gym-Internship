@@ -25,11 +25,11 @@ class Header {
 
   startAnimation() {
     this.textAnimationInterval = setInterval(() => {
-      this.headerTextDescriptionParent.classList.toggle("fade");
+      this.headerTextDescriptionParent.classList.toggle("fadeout");
       this.headerTextHeadingParent.classList.toggle("textHeading");
       setTimeout(() => {
         this.headerTextHeadingParent.classList.toggle("textHeading");
-        this.headerTextDescriptionParent.classList.toggle("fade");
+        this.headerTextDescriptionParent.classList.toggle("fadeout");
       }, 1);
     }, 9000);
   }

@@ -18,6 +18,9 @@ class SigningUp {
     this.name = document.getElementById("sign_up_name");
     this.email = document.getElementById("sign_up_email");
     this.submit = document.getElementById("sign_up_submit");
+    this.open = document.getElementById("nav_middle_button_open");
+        this.close = document.getElementById("nav_middle_button_close");
+        this.liContainer = document.getElementById("navigating_items");
   }
 
   logDisplay() {
@@ -35,6 +38,9 @@ class SigningUp {
     this.signUpBt.addEventListener("click", () => {
       this.formContainer.style.display = "block";
       this.nav.style.backgroundColor = "rgba(0,0,0,0.9)";
+      this.open.style.display = "none";
+      this.close.style.display = "none";
+      this.liContainer.style.display = "none";
       this.header.style.display = "none";
       this.main.style.display = "none";
       this.footer.style.display = "none";
