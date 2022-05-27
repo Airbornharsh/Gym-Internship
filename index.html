@@ -404,18 +404,65 @@
       </svg>
     </div>
 
-    <div id="shopping_cart"></div>
-    <svg
+    <div id="shopping_cart" class="center">
+      <h2>Shopping List</h2>
+      <ul id="product_list_render" class="center">
+        <li class="center">
+          <img
+            src="./assests/images/Product/steve-johnson-N-MqWXXZvNY-unsplash.jpg"
+            alt=""
+          />
+          <div class="details">
+            <h5>Water Bottle</h5>
+            <div class="amount_title center">
+              <p>Rs</p>
+              <p class="amount">400</p>
+            </div>
+          </div>
+        </li>
+        <li class="center">
+          <img
+            src="./assests/images/Product/steve-johnson-N-MqWXXZvNY-unsplash.jpg"
+            alt=""
+          />
+          <div class="details">
+            <h5>Water Bottle</h5>
+            <div class="amount_title center">
+              <p>Rs</p>
+              <p class="amount">400</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="total_buy">
+        <p class="total_amount">Total Amount</p>
+        <div class="buy">
+          <p>Rs</p>
+          <p class="total_amount_rate">900</p>
+          <button id="total_buy_button">Buy Now</button>
+        </div>
+      </div>
+      <svg
       id="shopping_cart_close"
       xmlns="http://www.w3.org/2000/svg"
-      height="48"
-      width="48"
     >
       <path
         d="M12.45 37.65 10.35 35.55 21.9 24 10.35 12.45 12.45 10.35 24 21.9 35.55 10.35 37.65 12.45 26.1 24 37.65 35.55 35.55 37.65 24 26.1Z"
-        fill="black"
+        fill="gray"
       />
     </svg>
+    </div>
+
+    <ul id="product_template">
+      <li class="inner">
+        <img src="" alt="" />
+        <h5></h5>
+        <div>
+          <p>Rs</p>
+          <p class="amount"></p>
+        </div>
+      </li>
+    </ul>
     <script src="./assests/index.js" type="module"></script>
   </body>
 </html>
