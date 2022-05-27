@@ -6,7 +6,7 @@ class Shopping{
     constructor() {
         new ShoppingButton();
         new AddItem();
-        new ShoppingRender();
+        //new ShoppingRender();
     }
 }
 
