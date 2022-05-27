@@ -283,6 +283,74 @@ header .text_description {
   font-size: 1rem;
 }
 
+#services_container {
+  height: 800px;
+}
+
+.services_background img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 800px;
+  z-index: -1;
+}
+
+.services_top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  padding-top: 30px;
+}
+
+.services_top h3 {
+  font-family: "Archivo Black";
+  font-size: 2rem;
+}
+
+.services_top p {
+  font-family: "Cairo";
+  font-size: 1.3rem;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.services_bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40vw;
+  margin-top: 8rem;
+}
+
+.services_bottom ul {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 4rem;
+}
+
+.services_bottom ul li {
+  background-color: white;
+  width: 12rem;
+  height: 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.services_bottom ul li img {
+  width: 7.5rem;
+}
+
+.services_bottom ul li p {
+  text-align: center;
+  font-family: "Cairo";
+  font-size: 1rem;
+}
+
 footer {
   padding: 75px 0;
   height: auto;
@@ -354,6 +422,25 @@ footer .footer_child_child_li a {
   .about_bottom_item {
     width: 40vw;
   }
+
+  #services_container{
+    height: 55rem;
+  }
+
+  .services_background img {
+    height: 55rem;
+  }
+
+.services_bottom {
+  margin-top: 5rem;
+}
+
+  .services_bottom ul {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 2rem;
+  }
+  
 }
 
 @media screen and (max-width: 800px) {
@@ -420,5 +507,22 @@ footer .footer_child_child_li a {
 
   .about_bottom_item {
     width: 80vw;
+  }
+
+  #services_container{
+    height: 100rem;
+  }
+
+  .services_background img {
+    height: 100rem;
+  }
+
+.services_bottom {
+  margin-top: 5rem;
+}
+
+  .services_bottom ul {
+    display: grid;
+    grid-template-columns: auto;
   }
 }
