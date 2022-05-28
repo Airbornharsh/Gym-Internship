@@ -11,6 +11,7 @@ class SigningUp {
     this.signedUp = document.querySelector("#signed_up h2");
     this.signUpBt = document.getElementById("sign_up");
     this.formContainer = document.getElementById("sign_up_template");
+    this.form = this.formContainer.querySelector("form");
     this.nav = document.querySelector("nav");
     this.header = document.querySelector("header");
     this.main = document.querySelector("main");
@@ -51,7 +52,7 @@ class SigningUp {
   StartSigningUp() {
     let password1 = document.getElementById("sign_up_password_1");
     let password2 = document.getElementById("sign_up_password_2");
-    this.submit.addEventListener("click", (event) => {
+    this.submit.addEventListener("submit", (event) => {
       event.preventDefault();
       if (
         this.name.value &&
@@ -69,12 +70,24 @@ class SigningUp {
   }
 
   Submitting(password) {
+    this.fetching(this.form);
     const data = {
       name: this.name.value,
       email: this.email.value,
       password: password,
     };
     window.localStorage.setItem("airo", JSON.stringify(data));
+  }
+
+  fetching(myForm) {
+    let formData = new FormData(myForm);
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString(),
+  })
+    .then(() => console.log("Form successfully submitted"))
+    .catch((error) => alert(error));
   }
 
   Reset() {

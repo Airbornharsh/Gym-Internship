@@ -43,38 +43,43 @@
       </div>
     </nav>
     <div id="sign_up_template">
-      <form action="submit" class="center" method="post" data-netlify="true" netlify>
+      <form name="contact" action="POST" class="center" method="POST" data-netlify="true">
         <ul>
           <li class="center_spaceBetween">
-            <label for="name">Name:</label>
-            <input type="text" name="" id="sign_up_name" placeholder="Name" />
+            <label for="name"
+              >Name:<input
+                type="text"
+                name="name"
+                id="sign_up_name"
+                placeholder="Name"
+            /></label>
           </li>
           <li class="center_spaceBetween">
-            <label for="email">Email:</label>
-            <input
-              type="email"
-              name=""
-              id="sign_up_email"
-              placeholder="Email"
-            />
+            <label for="email"
+              >Email:<input
+                type="email"
+                name="email"
+                id="sign_up_email"
+                placeholder="Email"
+            /></label>
           </li>
           <li class="center_spaceBetween">
-            <label for="password">Password:</label>
-            <input
-              type="password"
-              name=""
-              id="sign_up_password_1"
-              placeholder="PassWord"
-            />
+            <label for="password"
+              >Password:<input
+                type="password"
+                name="password"
+                id="sign_up_password_1"
+                placeholder="PassWord"
+            /></label>
           </li>
           <li class="center_spaceBetween">
-            <label for="password">Confirm Password:</label>
-            <input
-              type="password"
-              name=""
-              id="sign_up_password_2"
-              placeholder="PassWord"
-            />
+            <label for="password"
+              >Confirm Password:<input
+                type="password"
+                name="password"
+                id="sign_up_password_2"
+                placeholder="PassWord"
+            /></label>
           </li>
         </ul>
         <button type="submit" id="sign_up_submit">Submit</button>
@@ -248,8 +253,7 @@
           <p>You can Buy the products here for your gym Training</p>
         </div>
         <div class="products_bottom center">
-          <ul id="products_bottom_List">
-          </ul>
+          <ul id="products_bottom_List"></ul>
         </div>
       </div>
     </main>
@@ -316,9 +320,7 @@
 
     <div id="shopping_cart" class="center">
       <h2>Shopping List</h2>
-      <ul id="product_list_render" class="center">
-        
-      </ul>
+      <ul id="product_list_render" class="center"></ul>
       <div class="total_buy">
         <p class="total_amount">Total Amount</p>
         <div class="buy">
@@ -335,9 +337,7 @@
       </svg>
     </div>
 
-    <div id="added_to_cart">
-      ADDED TO CART
-    </div>
+    <div id="added_to_cart">ADDED TO CART</div>
 
     <!-- Template Section -->
     <ul id="product_render_template">
@@ -358,8 +358,8 @@
     <ul id="product_template">
       <li class="center">
         <div class="product_remove_container">
-        <img src="" alt="" />
-        <button class="product_remove">Remove</button>
+          <img src="" alt="" />
+          <button class="product_remove">Remove</button>
         </div>
         <div class="details">
           <h5></h5>
