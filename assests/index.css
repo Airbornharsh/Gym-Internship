@@ -1,5 +1,83 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cairo:wght@700&family=JetBrains+Mono&family=Lato:wght@300&family=Oswald&family=Roboto&family=Roboto+Condensed&family=Roboto+Slab&display=swap");
 
+/* color template one */
+
+/* --tea-green: #c8ffbdff;
+--raisin-black: #212227ff;
+--neon-blue: #4d6cfaff;
+--dark-orange: #ff8600ff;
+
+--tea-green: hsla(110, 100%, 87%, 1);
+--raisin-black: hsla(230, 8%, 14%, 1);
+--neon-blue: hsla(229, 95%, 64%, 1);
+--dark-orange: hsla(32, 100%, 50%, 1);
+
+$tea-green: #c8ffbdff;
+$raisin-black: #212227ff;
+$neon-blue: #4d6cfaff;
+$dark-orange: #ff8600ff;
+
+$tea-green: hsla(110, 100%, 87%, 1);
+$raisin-black: hsla(230, 8%, 14%, 1);
+$neon-blue: hsla(229, 95%, 64%, 1);
+$dark-orange: hsla(32, 100%, 50%, 1);
+
+$tea-green: rgba(200, 255, 189, 1);
+$raisin-black: rgba(33, 34, 39, 1);
+$neon-blue: rgba(77, 108, 250, 1);
+$dark-orange: rgba(255, 134, 0, 1);
+
+$gradient-top: linear-gradient(0deg, #c8ffbdff, #212227ff, #4d6cfaff, #ff8600ff);
+$gradient-right: linear-gradient(90deg, #c8ffbdff, #212227ff, #4d6cfaff, #ff8600ff);
+$gradient-bottom: linear-gradient(180deg, #c8ffbdff, #212227ff, #4d6cfaff, #ff8600ff);
+$gradient-left: linear-gradient(270deg, #c8ffbdff, #212227ff, #4d6cfaff, #ff8600ff);
+$gradient-top-right: linear-gradient(45deg, #c8ffbdff, #212227ff, #4d6cfaff, #ff8600ff);
+$gradient-bottom-right: linear-gradient(135deg, #c8ffbdff, #212227ff, #4d6cfaff, #ff8600ff);
+$gradient-top-left: linear-gradient(225deg, #c8ffbdff, #212227ff, #4d6cfaff, #ff8600ff);
+$gradient-bottom-left: linear-gradient(315deg, #c8ffbdff, #212227ff, #4d6cfaff, #ff8600ff);
+$gradient-radial: radial-gradient(#c8ffbdff, #212227ff, #4d6cfaff, #ff8600ff); */
+
+/* color template two */
+/* --cinnabar: #eb4431ff;
+--rich-black: #002b2fff;
+--bleu-de-france: #0181e4ff;
+--white: #ffffffff;
+
+--cinnabar: hsla(6, 82%, 56%, 1);
+--rich-black: hsla(185, 100%, 9%, 1);
+--bleu-de-france: hsla(206, 99%, 45%, 1);
+--white: hsla(0, 0%, 100%, 1);
+
+$cinnabar: #eb4431ff;
+$rich-black: #002b2fff;
+$bleu-de-france: #0181e4ff;
+$white: #ffffffff;
+
+$cinnabar: hsla(6, 82%, 56%, 1);
+$rich-black: hsla(185, 100%, 9%, 1);
+$bleu-de-france: hsla(206, 99%, 45%, 1);
+$white: hsla(0, 0%, 100%, 1);
+
+$cinnabar: rgba(235, 68, 49, 1);
+$rich-black: rgba(0, 43, 47, 1);
+$bleu-de-france: rgba(1, 129, 228, 1);
+$white: rgba(255, 255, 255, 1);
+
+$gradient-top: linear-gradient(0deg, #eb4431ff, #002b2fff, #0181e4ff, #ffffffff);
+$gradient-right: linear-gradient(90deg, #eb4431ff, #002b2fff, #0181e4ff, #ffffffff);
+$gradient-bottom: linear-gradient(180deg, #eb4431ff, #002b2fff, #0181e4ff, #ffffffff);
+$gradient-left: linear-gradient(270deg, #eb4431ff, #002b2fff, #0181e4ff, #ffffffff);
+$gradient-top-right: linear-gradient(45deg, #eb4431ff, #002b2fff, #0181e4ff, #ffffffff);
+$gradient-bottom-right: linear-gradient(135deg, #eb4431ff, #002b2fff, #0181e4ff, #ffffffff);
+$gradient-top-left: linear-gradient(225deg, #eb4431ff, #002b2fff, #0181e4ff, #ffffffff);
+$gradient-bottom-left: linear-gradient(315deg, #eb4431ff, #002b2fff, #0181e4ff, #ffffffff);
+$gradient-radial: radial-gradient(#eb4431ff, #002b2fff, #0181e4ff, #ffffffff);
+ */
+
+body {
+  background-color: #dff3e4;
+}
+
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
 }
@@ -23,7 +101,7 @@
 }
 
 nav {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(26, 36, 47, 0.8);
   width: 100%;
   height: 50px;
   z-index: 1;
@@ -32,7 +110,7 @@ nav {
 
 .nav_logo {
   margin-left: 2vw;
-  color: white;
+  color: #ffbe4e;
   font-family: "Archivo Black";
   font-style: normal;
   font-weight: 900;
@@ -46,7 +124,7 @@ nav {
 .nav_middle ul li {
   list-style: none;
   margin: 0 5vw;
-  color: white;
+  color: #ff8600;
   /* color: #acacac; */
   font-family: "Cairo";
   font-style: normal;
@@ -75,8 +153,7 @@ nav {
 }
 
 header {
-  height: 660px;
-  background-color: rgba(0, 0, 0, 0.3);
+  height: 700px;
   color: white;
   display: flex;
   justify-content: center;
@@ -87,7 +164,7 @@ header img {
   object-fit: cover;
   width: 100%;
   height: 700px;
-  top: -40px;
+  top: 0px;
   z-index: -1;
 }
 
@@ -95,7 +172,8 @@ header .text {
   flex-direction: column;
   width: 80vw;
   text-align: center;
-  height: 400px;
+  height: 700px;
+  margin-top: 100px;
 }
 
 header .text_heading {
@@ -115,7 +193,7 @@ header .text_description {
   position: fixed;
   bottom: 1rem;
   left: 1rem;
-  background-color: white;
+  background-color: #131c26;
   border-radius: 0.4rem;
   padding: 0.2rem;
   width: 2.7rem;
@@ -132,13 +210,13 @@ header .text_description {
   height: 90vh;
   top: 5vh;
   left: 5vw;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(32, 44, 57);
   z-index: 1;
   border-radius: 0.4rem;
   display: none;
   flex-direction: column;
   justify-content: flex-start;
-  color: white;
+  color: rgb(223, 243, 228);
 }
 
 #shopping_cart_close {
@@ -172,14 +250,14 @@ header .text_description {
   margin-bottom: 2rem;
 }
 
-#product_list_render .product_remove_container{
+#product_list_render .product_remove_container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-#product_list_render .product_remove_container .product_remove{
+#product_list_render .product_remove_container .product_remove {
   margin-top: 0.5rem;
   padding: 0.2rem;
   border-radius: 0.3rem;
@@ -419,7 +497,7 @@ header .text_description {
 }
 
 .services_bottom ul li {
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: #dff3e4;
   width: 12rem;
   height: 12rem;
   flex-direction: column;
@@ -434,15 +512,16 @@ header .text_description {
   text-align: center;
   font-family: "Cairo";
   font-size: 1rem;
+  color: rgb(26, 36, 47);
 }
 
 #products_container {
-  background-color: white;
+  background-color: rgb(223, 243, 228);
   padding-bottom: 50px;
 }
 
 .products_top {
-  color: black;
+  color: rgba(26, 36, 47, 1);
   flex-direction: column;
   padding-top: 30px;
 }
@@ -470,7 +549,7 @@ header .text_description {
 }
 
 .products_bottom ul li {
-  background-color: rgb(22, 21, 24);
+  background-color: #0b7a75;
   width: 15rem;
   flex-direction: column;
   border-radius: 10px;
@@ -500,12 +579,13 @@ header .text_description {
 }
 
 .products_bottom ul li .buttons button {
-  background-color: #424243;
-  color: white;
+  background-color: #DFF3E4;
+  color: #202c39;
   padding: 0.2rem;
   border-radius: 0.3rem;
   font-family: "Cairo";
   margin: 0 1rem;
+  border: 0px;
 }
 
 #added_to_cart {
@@ -524,14 +604,14 @@ header .text_description {
 footer {
   padding: 5rem 0;
   height: auto;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: #161e26;
 }
 
 footer .footer_child_ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  color: white;
+  color: #DFF3E4;
   font-family: "Cairo";
 }
 
@@ -553,7 +633,7 @@ footer .footer_child_quotes p {
 
 footer .footer_child_li {
   list-style: none;
-  color: white;
+  color: #DFF3E4;
 }
 
 footer .footer_child_child_ul {
@@ -574,7 +654,7 @@ footer .footer_child_child_heading {
 
 footer .footer_child_child_li a {
   text-decoration: none;
-  color: white;
+  color: #DFF3E4;
 }
 
 @media screen and (max-width: 1200px) {
@@ -624,13 +704,14 @@ footer .footer_child_child_li a {
     position: fixed;
     top: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #202C39;
     transition: all 2s;
   }
 
   .nav_middle ul li {
     margin: 0;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #dff3e4 ;
+    color: #dff3e4 ;
     width: 50vw;
     display: flex;
     justify-content: center;
