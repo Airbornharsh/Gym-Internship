@@ -52,16 +52,16 @@ class SigningUp {
   StartSigningUp() {
     let password1 = document.getElementById("sign_up_password_1");
     let password2 = document.getElementById("sign_up_password_2");
-    this.submit.addEventListener("submit", (event) => {
+    this.submit.addEventListener("click", (event) => {
       event.preventDefault();
       if (
         this.name.value &&
         this.email.value &&
         password1.value == password2.value
       ) {
-        this.Submitting(password1);
         alert("Submitted");
         window.localStorage.setItem("isLogined", true);
+        this.Submitting(password1);
         this.Reset();
       } else {
         alert("Fill it Properly");
@@ -70,13 +70,13 @@ class SigningUp {
   }
 
   Submitting(password) {
-    this.fetching(this.form);
     const data = {
       name: this.name.value,
       email: this.email.value,
       password: password,
     };
     window.localStorage.setItem("airo", JSON.stringify(data));
+    this.fetching(this.form);
   }
 
   fetching(myForm) {
