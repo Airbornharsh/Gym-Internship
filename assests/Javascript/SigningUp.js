@@ -20,18 +20,18 @@ class SigningUp {
     this.email = document.getElementById("sign_up_email");
     this.submit = document.getElementById("sign_up_submit");
     this.open = document.getElementById("nav_middle_button_open");
-        this.close = document.getElementById("nav_middle_button_close");
-        this.liContainer = document.getElementById("navigating_items");
+    this.close = document.getElementById("nav_middle_button_close");
+    this.liContainer = document.getElementById("navigating_items");
   }
 
   logDisplay() {
     if (this.isLogined) {
       document.getElementById("sign_up_container").style.display = "none";
       this.signUpBt.style.display = "none";
-      this.signedUp.textContent ="Hii " +
-        JSON.parse(localStorage.getItem("airo")).name;
+      this.signedUp.textContent =
+        "Hii " + JSON.parse(localStorage.getItem("airo")).name;
     } else {
-        this.signedUp.style.display = "none";
+      this.signedUp.style.display = "none";
     }
   }
 
@@ -59,10 +59,13 @@ class SigningUp {
         this.email.value &&
         password1.value == password2.value
       ) {
+        this.Submitting(password1);
         alert("Submitted");
         window.localStorage.setItem("isLogined", true);
-        this.Submitting(password1);
         this.Reset();
+        setTimeout(() => {
+          this.fetching(this.form);
+        }, 500);
       } else {
         alert("Fill it Properly");
       }
@@ -76,18 +79,17 @@ class SigningUp {
       password: password,
     };
     window.localStorage.setItem("airo", JSON.stringify(data));
-    this.fetching(this.form);
   }
 
   fetching(myForm) {
     let formData = new FormData(myForm);
-  fetch("/", {
-    method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: new URLSearchParams(formData).toString(),
-  })
-    .then(() => console.log("Form successfully submitted"))
-    .catch((error) => alert(error));
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => console.log("Form successfully submitted"))
+      .catch((error) => alert(error));
   }
 
   Reset() {
