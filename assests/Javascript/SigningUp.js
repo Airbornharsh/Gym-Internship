@@ -70,7 +70,7 @@ class SigningUp {
   }
 
   Submitting(password) {
-    // this.fetching(this.form);
+    this.fetching(this.form);
     const data = {
       name: this.name.value,
       email: this.email.value,
@@ -79,16 +79,16 @@ class SigningUp {
     window.localStorage.setItem("airo", JSON.stringify(data));
   }
 
-  // fetching(myForm) {
-  //   let formData = new FormData(myForm);
-  // fetch("/", {
-  //   method: "POST",
-  //   headers: { "Content-Type": "application/x-www-form-urlencoded" },
-  //   body: new URLSearchParams(formData).toString(),
-  // })
-  //   .then(() => console.log("Form successfully submitted"))
-  //   .catch((error) => alert(error));
-  // }
+  fetching(myForm) {
+    let formData = new FormData(myForm);
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString(),
+  })
+    .then(() => console.log("Form successfully submitted"))
+    .catch((error) => alert(error));
+  }
 
   Reset() {
     document.location.reload();
