@@ -28,7 +28,7 @@ class SigningUp {
 
   logDisplay() {
     if (this.isLogined) {
-      document.getElementById("sign_up_container").style.display = "none";
+      document.getElementById("sign_up_template").style.display = "none";
       this.signUpBt.style.display = "none";
       this.signedUp.textContent =
         "Hii " + JSON.parse(localStorage.getItem("airo")).name;
@@ -40,8 +40,8 @@ class SigningUp {
   CheckClicked() {
     this.formContainer.style.display = "none";
     this.signUpBt.addEventListener("click", () => {
-      this.formContainer.style.display = "block";
-      this.nav.style.backgroundColor = "rgba(0,0,0,0.9)";
+      this.formContainer.style.display = "flex";
+      this.nav.style.backgroundColor = "rgba(26, 36, 47, 0.8)";
       this.open.style.display = "none";
       this.close.style.display = "none";
       this.liContainer.style.display = "none";
