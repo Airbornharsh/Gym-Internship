@@ -1,0 +1,76 @@
+#about_container {
+  flex-direction: column;
+}
+
+.about_top {
+  flex-direction: column;
+  width: 80%;
+  margin-top: 30px;
+}
+
+.about_top_heading {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.about_top_description {
+  font-family: "Cairo";
+  font-size: 1.3rem;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.about_bottom {
+  margin-top: 20px;
+}
+
+.about_bottom_item_container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 2vw;
+}
+
+.about_bottom_item {
+  width: 30vw;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.about_bottom_item img {
+  width: 10rem;
+  margin-bottom: 15px;
+}
+
+.about_bottom_item h5 {
+  margin-bottom: 10px;
+  font-family: "Archivo Black";
+  font-size: 1.5rem;
+}
+
+.about_bottom_item p {
+  text-align: center;
+  font-family: "Cairo";
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 1050px) {
+  .about_bottom_item_container {
+    grid-template-columns: auto auto;
+    grid-column-gap: 5vw;
+  }
+
+  .about_bottom_item {
+    width: 40vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about_bottom_item_container {
+    grid-template-columns: auto;
+  }
+
+  .about_bottom_item {
+    width: 80vw;
+  }
+}

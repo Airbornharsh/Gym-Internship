@@ -1,6 +1,6 @@
-import Header from "./Javascript/Header.js";
+import Header from "./Javascript/Header/Header.js";
 import Navigate from "./Javascript/Navigation/Navigate.js";
-import SigningUp from "./Javascript/SigningUp.js";
+import SigningUp from "./Javascript/SigningUp/SigningUp.js";
 import Shopping from "./Javascript/Shopping/Shopping.js";
 import ProductRender from "./Javascript/Products/ProductRender.js";
 
