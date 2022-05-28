@@ -52,7 +52,7 @@ class SigningUp {
   StartSigningUp() {
     let password1 = document.getElementById("sign_up_password_1");
     let password2 = document.getElementById("sign_up_password_2");
-    this.submit.addEventListener("click", (event) => {
+    this.submit.addEventListener("submit", (event) => {
       event.preventDefault();
       if (
         this.name.value &&
