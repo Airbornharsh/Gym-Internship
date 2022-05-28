@@ -135,7 +135,7 @@
   font-weight: 900;
 }
 
-#added_to_cart {
+#custom_alert {
   background-color: white;
   position: fixed;
   bottom: 0.5rem;
@@ -146,4 +146,5 @@
   left: 50%;
   transform: translateX(-50%);
   display: none;
+  border-radius: 0.2rem;
 }

@@ -7,8 +7,6 @@ class SigningUp {
     this.StartSigningUp();
   }
 
-  
-
   elements() {
     this.signedUp = document.querySelector("#signed_up h2");
     this.signUpBt = document.getElementById("sign_up");
@@ -24,6 +22,7 @@ class SigningUp {
     this.open = document.getElementById("nav_middle_button_open");
     this.close = document.getElementById("nav_middle_button_close");
     this.liContainer = document.getElementById("navigating_items");
+    this.customAlert = document.getElementById("custom_alert");
   }
 
   logDisplay() {
@@ -62,12 +61,12 @@ class SigningUp {
         password1.value == password2.value
       ) {
         this.Submitting(password1);
-        alert("Submitted");
+        this.customAlertFn("SUBMITTED");
         window.localStorage.setItem("isLogined", true);
         this.Reset();
         // this.fetching(this.form);
       } else {
-        alert("Fill it Properly");
+        this.customAlertFn("Fill it Properly");
       }
     });
   }
@@ -79,6 +78,15 @@ class SigningUp {
       password: password,
     };
     window.localStorage.setItem("airo", JSON.stringify(data));
+  }
+
+  customAlertFn(message) {
+    this.customAlert.textContent = message;
+    console.log("alerted");
+    this.customAlert.style.display = "block";
+    setTimeout(() => {
+      this.customAlert.style.display = "none";
+    }, 700);
   }
 
   // fetching(myForm) {

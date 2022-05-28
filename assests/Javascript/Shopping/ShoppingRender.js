@@ -7,6 +7,7 @@ class ShoppingRender {
     );
     this.totalAmount = 0;
     this.totalBuy = document.getElementById("total_buy_button");
+    this.customAlert = document.getElementById("custom_alert");
   }
 
   render() {
@@ -36,14 +37,24 @@ class ShoppingRender {
             .textContent
         ) != 0
       ) {
-        alert(`Bought Product of Rs${this.totalAmount}`);
-        console.log(this.renderLocation.firstChild);
+        this.customAlertFn(`Bought Product of Rs${this.totalAmount}`);
         while (this.renderLocation.firstChild) {
           this.renderLocation.removeChild(this.renderLocation.firstChild);
         }
         this.totalAmountEl.textContent = "0";
+      } else {
+        this.customAlertFn("Nothing To Buy");
       }
     });
+  }
+
+  customAlertFn(message) {
+    this.customAlert.textContent = message;
+    console.log("alerted");
+    this.customAlert.style.display = "block";
+    setTimeout(() => {
+      this.customAlert.style.display = "none";
+    }, 700);
   }
 }
 
