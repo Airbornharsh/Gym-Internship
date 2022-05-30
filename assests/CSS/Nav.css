@@ -8,7 +8,7 @@ nav {
 
 .nav_logo {
   margin-left: 2vw;
-  color: #ffa811;
+  color:var(--logo);
   font-family: "Archivo Black";
   font-style: normal;
   font-weight: 900;
@@ -23,7 +23,7 @@ nav {
   list-style: none;
   margin: 0 5vw;
   /* color: #ff8600; */
-  color: #d5f0dc;
+  color: var(--nav-el-color);
   /* color: #acacac; */
   font-family: "Cairo";
   font-style: normal;
@@ -37,15 +37,15 @@ nav {
     position: fixed;
     top: 0;
     right: 0;
-    background-color: #202c39;
+    background-color: var(--nav-el-background);
     transition: all 2s;
     box-shadow: -5px 5px 20px black;
   }
 
   .nav_middle ul li {
     margin: 0;
-    border-bottom: 1px solid #dff3e4;
-    color: #dff3e4;
+    border-bottom: 1px solid var(--nav_border);
+    color: var(--nav-el-color);
     width: 50vw;
     display: flex;
     justify-content: center;

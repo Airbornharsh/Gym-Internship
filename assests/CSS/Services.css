@@ -1,6 +1,6 @@
 #services_container {
   height: 800px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--services-background);
 }
 
 .services_background img {
@@ -12,7 +12,7 @@
 }
 
 .services_top {
-  color: white;
+  color: var(--mode_text);
   flex-direction: column;
   padding-top: 30px;
 }
@@ -21,6 +21,7 @@
   font-family: "Rubik", sans-serif;
   font-weight: 700;
   font-size: 2rem;
+  color: var(--services-top-heading);
 }
 
 .services_top p {
@@ -28,6 +29,7 @@
   font-size: 1.3rem;
   text-align: center;
   margin-top: 10px;
+  color: var(--services-top-description);
 }
 
 .services_bottom {
@@ -42,13 +44,13 @@
 }
 
 .services_bottom ul li {
-  background-color: #dff3e4;
+  background-color: var(--services-bottom-el-background);
   width: 12rem;
   height: 12rem;
   flex-direction: column;
   border-radius: 10px;
   transition: all 0.5s;
-  box-shadow: 0px 10px 20px #202c39;
+  box-shadow: 0px 10px 20px var(--services-bottom-el-boxshadow);
 }
 
 .services_bottom ul :hover{
@@ -67,7 +69,7 @@
   text-align: center;
   font-family: "Cairo";
   font-size: 1rem;
-  color: rgb(26, 36, 47);
+  color: var(--services-bottom-el-heading);
 }
 
 .services_bottom ul li p:hover{

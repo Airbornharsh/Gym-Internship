@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cairo:wght@700&family=JetBrains+Mono&family=Kanit:wght@300&family=Lato:wght@300&family=Oswald&family=Roboto&family=Roboto+Condensed&family=Roboto+Slab&family=Rubik&display=swap");
 
+@import url(./CSS/Mode.css);
 @import url(./CSS/Nav.css);
 @import url(./CSS/Header.css);
 @import url(./CSS/SigningUp.css);
@@ -10,6 +11,152 @@
 @import url(./CSS/Footer.css);
 @import url(./CSS/Animation.css);
 
+/* 
+:root{
+  --orange: #ffa811;
+  --darkest_blue:#202c39;
+  --nav_background: #202c39;
+  --lightest_green:#d5f0dc;
+  --about_background: #d5f0dc;
+  --nav_border:#d5f0dc;
+  --mode: white;
+  --mode_text: white;
+  --negative_mode: black;
+  --background_cover:rgba(0, 0, 0, 0.5);
+  --mid_blue_green:#0b7a75;
+  --fade: transparent;
+} */
+
+
+:root {
+  --logo: #ffa811;
+  --nav-scroll-background: rgba(26, 36, 47, 0.8);
+  --nav-el-color: #d5f0dc;
+  --nav-el-background: #202c39;
+  --nav-border: #d5f0dc;
+  --nav-signup-color: #202c39;
+  --nav-signup-background: #d5f0dc;
+  --form-background: #202c39;
+  --form-boxshadow: #202c39;
+  --form-label: #d5f0dc;
+  --form-input-background: white;
+  --form-input-color: #202c39;
+  --form-submit-background: white;
+  --form-submit-color: #202c39;
+  --form-submit-border: black;
+  --header-background: transparent;
+  --header-name: white;
+  --header-heading: white;
+  --header-description: white;
+  --about-background: #d5f0dc;
+  --about-top-heading: black;
+  --about-top-description: black;
+  --about-bottom-svg: ;
+  --about-bottom-heading: black;
+  --about-bottom-description: black;
+  --services-background: rgba(0, 0, 0, 0.5);
+  --services-top-heading: white;
+  --services-top-description: white;
+  --services-bottom-el-background: #d5f0dc;
+  --services-bottom-el-boxshadow: #202c39;
+  --services-bottom-el-svg: ;
+  --services-bottom-el-heading: #202c39;
+  --products-background: #d5f0dc;
+  --products-top-heading: black;
+  --products-top-description: black;
+  --products-bottom-el-background: #0b7a75;
+  --products-bottom-el-boxshadow: #202c39;
+  --products-bottom-el-name: white;
+  --products-bottom-el-price: white;
+  --products-bottom-el-button-background: #d5f0dc;
+  --products-bottom-el-button-color: #202c39;
+  --cart-background: #202c39;
+  --cart-color: #d5f0dc;
+  --shopping-background: #202c39;
+  --shopping-heading: white;
+  --shopping-remove-background: white;
+  --shopping-remove-color: #202c39;
+  --shopping-el-name: #d5f0dc;
+  --shopping-el-price: #d5f0dc;
+  --shopping-total: #d5f0dc;
+  --shopping-total-price: #d5f0dc;
+  --shopping-buy-background: white;
+  --shopping-buy-color: #202c39;
+  --footer-background: #202c39;
+  --footer-quotes-heading: #d5f0dc;
+  --footer-quotes-description: #d5f0dc;
+  --footer-link-heading: #d5f0dc;
+  --footer-link: #d5f0dc;
+}
+
+/* :root {
+  --light-green: #cd7f13;
+  --light-green-background: #112835;
+  --darkest-blue: #dcedff;
+  --darkest-blue-background: #0e1819;
+  --mid-blue-green: #44896a;
+  --white: rgb(219, 219, 219);
+  --black: rgb(212, 212, 212);
+  --logo: #ffa811;
+  --nav-scroll-background: rgba(26, 36, 47, 0.8);
+  --nav-el-color: var(--light-green);
+  --nav-el-background: var(--darkest-blue-background);
+  --nav-border: var(--light-green);
+  --nav-signup-color: var(--darkest-blue);
+  --nav-signup-background: var(--light-green-background);
+  --form-background: var(--darkest-blue-background);
+  --form-boxshadow: var(--darkest-blue-background);
+  --form-label: var(--light-green);
+  --form-input-background: var(--white);
+  --form-input-color: var(--darkest-blue);
+  --form-submit-background: var(--white);
+  --form-submit-color: var(--darkest-blue);
+  --form-submit-border: var(--black);
+  --header-background: transparent;
+  --header-name: var(--white);
+  --header-heading: var(--white);
+  --header-description: var(--white);
+  --about-background: var(--light-green-background);
+  --about-top-heading: var(--black);
+  --about-top-description: var(--black);
+  --about-bottom-svg: ;
+  --about-bottom-heading: var(--black);
+  --about-bottom-description: var(--black);
+  --services-background: rgba(0, 0, 0, 0.5);
+  --services-top-heading: var(--white);
+  --services-top-description: var(--white);
+  --services-bottom-el-background: var(--light-green-background);
+  --services-bottom-el-boxshadow: var(--darkest-blue-background);
+  --services-bottom-el-svg: ;
+  --services-bottom-el-heading: var(--darkest-blue);
+  --products-background: var(--light-green-background);
+  --products-top-heading: var(--black);
+  --products-top-description: var(--black);
+  --products-bottom-el-background: var(--mid-blue-green);
+  --products-bottom-el-boxshadow: var(--darkest-blue-background);
+  --products-bottom-el-name: var(--white);
+  --products-bottom-el-price: var(--white);
+  --products-bottom-el-button-background: var(--light-green-background);
+  --products-bottom-el-button-color: var(--darkest-blue);
+  --cart-background: var(--darkest-blue-background);
+  --cart-color: var(--light-green);
+  --shopping-background: var(--darkest-blue-background);
+  --shopping-heading: var(--white);
+  --shopping-remove-background: var(--white);
+  --shopping-remove-color: var(--darkest-blue-background);
+  --shopping-el-name: var(--light-green);
+  --shopping-el-price: var(--light-green);
+  --shopping-total: var(--light-green);
+  --shopping-total-price: var(--light-green);
+  --shopping-buy-background: var(--white);
+  --shopping-buy-color: var(--darkest-blue-background);
+  --footer-background: var(--darkest-blue-background);
+  --footer-quotes-heading: var(--light-green);
+  --footer-quotes-description: var(--light-green);
+  --footer-link-heading: var(--light-green);
+  --footer-link: var(--light-green);
+} */
+
 * {
   padding: 0;
   margin: 0;
@@ -17,7 +164,7 @@
 }
 
 body {
-  background-color: #dff3e4;
+  background-color: var(--lightest_green);
 }
 
 .material-symbols-outlined {
@@ -34,4 +181,14 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  transition: all 0.5s;
 }

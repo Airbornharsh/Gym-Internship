@@ -1,5 +1,6 @@
 #about_container {
   flex-direction: column;
+  background-color: var(--about-background);
 }
 
 .about_top {
@@ -12,6 +13,7 @@
   font-family: "Rubik", sans-serif;
   font-weight: 700;
   font-size: 2rem;
+  color: var(--about-top-heading);
 }
 
 .about_top_description {
@@ -19,6 +21,7 @@
   font-size: 1.3rem;
   text-align: center;
   margin-top: 10px;
+  color: var(--about-top-description);
 }
 
 .about_bottom {
@@ -46,12 +49,14 @@
   margin-bottom: 10px;
   font-family: "Archivo Black";
   font-size: 1.5rem;
+  color: var(--about-bottom-heading);
 }
 
 .about_bottom_item p {
   text-align: center;
   font-family: "Cairo";
   font-size: 1rem;
+  color: var(--about-bottom-description);
 }
 
 @media screen and (max-width: 1050px) {

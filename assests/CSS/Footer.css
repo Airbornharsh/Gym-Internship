@@ -1,14 +1,13 @@
 footer {
   padding: 5rem 0;
   height: auto;
-  background-color: #161e26;
+  background-color: var(--footer-background);
 }
 
 footer .footer_child_ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  color: #dff3e4;
   font-family: "Cairo";
 }
 
@@ -20,17 +19,19 @@ footer .footer_child_quotes {
 footer .footer_child_quotes h4 {
   transform: scale(1.8);
   margin-bottom: 10px;
+  color: var(--footer-quotes-heading);
 }
 
 footer .footer_child_quotes p {
   font-size: 0.8rem;
   text-align: center;
   margin-top: 5px;
+  color: var(--footer-quotes-description);
 }
 
 footer .footer_child_li {
   list-style: none;
-  color: #dff3e4;
+  color: var(--footer-link-heading);
 }
 
 footer .footer_child_child_ul {
@@ -51,7 +52,7 @@ footer .footer_child_child_heading {
 
 footer .footer_child_child_li a {
   text-decoration: none;
-  color: #dff3e4;
+  color: var(--footer-link);
 }
 
 @media screen and (max-width: 800px) {

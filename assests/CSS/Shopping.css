@@ -2,7 +2,7 @@
   position: fixed;
   bottom: 1rem;
   left: 1rem;
-  background-color: #131c26;
+  background-color: var(--cart-background);
   border-radius: 0.4rem;
   padding: 0.2rem;
   width: 2.7rem;
@@ -19,13 +19,12 @@
   height: 90vh;
   top: 5vh;
   left: 5vw;
-  background-color: rgb(32, 44, 57);
+  background-color: var(--shopping-background);
   z-index: 1;
   border-radius: 0.4rem;
   display: none;
   flex-direction: column;
   justify-content: flex-start;
-  color: rgb(223, 243, 228);
 }
 
 #shopping_cart_close {
@@ -40,7 +39,7 @@
   font-family: "Archivo Black";
   font-size: 2rem;
   margin: 1rem 0;
-  color: white;
+  color: var(--shopping-heading);
 }
 
 #product_list_render {
@@ -69,7 +68,10 @@
 #product_list_render .product_remove_container .product_remove {
   margin-top: 0.5rem;
   padding: 0.2rem;
+
   border-radius: 0.3rem;
+  background-color: var(--shopping-remove-background);
+  color: var(--shopping-remove-color);
 }
 
 #product_list_render li img {
@@ -86,10 +88,12 @@
   font-family: "Kanit";
   transform: scaleX(1.1);
   font-size: 1rem;
+  color: var(--shopping-el-name);
 }
 
 #product_list_render li .amount_title {
   font-family: "JetBrains Mono";
+  color: var(--shopping-el-price);
   font-size: 1rem;
 }
 
@@ -109,11 +113,12 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 2.5vh;
-  border-top: 1px solid white;
+  border-top: 1px solid var(--darkest-blue);
 }
 
 #shopping_cart .total_buy .total_amount {
   font-family: "Rubik", sans-serif;
+  color: var(--shopping-total);
 }
 
 #shopping_cart .total_buy .buy {
@@ -122,6 +127,7 @@
   align-items: center;
   font-family: "JetBrains Mono";
   font-size: 1.2rem;
+  color: var(--shopping-total-price);
 }
 
 /* #shopping_cart .total_buy .buy .total_amount_rate {
@@ -133,14 +139,16 @@
   margin-left: 2rem;
   font-family: "JetBrains Mono";
   font-weight: 900;
+  background-color: var(--shopping-buy-background);
+  color: var(--shopping-buy-color);
 }
 
 #custom_alert {
-  background-color: white;
+  background-color: var(--mode);
   position: fixed;
   bottom: 0.5rem;
   font-family: "Archivo Black";
-  color: black;
+  color: var(--negative_mode);
   padding: 0.3rem;
   margin: 0% auto;
   left: 50%;

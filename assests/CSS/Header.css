@@ -1,8 +1,8 @@
 header {
   height: 700px;
-  color: white;
   display: flex;
   justify-content: center;
+  background-color: var(--header-background);
 }
 
 header img {
@@ -13,6 +13,16 @@ header img {
   top: 0px;
   z-index: -1;
 }
+
+#signed_up {
+  position: absolute;
+  color: var(--header-name);
+  font-size: 1rem;
+  font-family: "Archivo Black";
+  font-weight: 100;
+  top: 80px;
+}
+
 
 header .text {
   flex-direction: column;
@@ -28,11 +38,13 @@ header .text_heading {
   font-size: 2rem;
   font-family: sans-serif;
   transition: all 1s;
+  color: var(--header-heading);
 }
 
 header .text_description {
   font-size: 1.3rem;
   font-family: "JetBrains Mono", monospace;
+  color: var(--header-description);
 }
 
 @keyframes fadeout {
