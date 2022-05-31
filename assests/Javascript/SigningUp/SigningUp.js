@@ -4,12 +4,14 @@ class SigningUp {
     this.isLogined = isLogined;
     this.logDisplay();
     this.CheckClicked();
+    this.logedOut();
     this.StartSigningUp();
   }
 
   elements() {
     this.signedUp = document.querySelector("#signed_up h2");
     this.signUpBt = document.getElementById("sign_up");
+    this.logOut = document.getElementById("log_out");
     this.formContainer = document.getElementById("sign_up_template");
     this.form = this.formContainer.querySelector("form");
     this.nav = document.querySelector("nav");
@@ -31,8 +33,10 @@ class SigningUp {
       this.signUpBt.style.display = "none";
       this.signedUp.textContent =
         "Hii " + JSON.parse(localStorage.getItem("airo")).name;
+      this.logOut.style.display = "block";
     } else {
       this.signedUp.style.display = "none";
+      this.logOut.style.display = "none";
     }
   }
 
@@ -47,6 +51,17 @@ class SigningUp {
       this.header.style.display = "none";
       this.main.style.display = "none";
       this.footer.style.display = "none";
+    });
+  }
+
+  logedOut() {
+    this.logOut.addEventListener("click", () => {
+      console.log("hii");
+      localStorage.removeItem("isLogined");
+      localStorage.removeItem("airo");
+      this.isLogined = false;
+      this.logDisplay();
+      this.signUpBt.style.display = "block";
     });
   }
 

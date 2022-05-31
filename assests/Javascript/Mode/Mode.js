@@ -78,7 +78,7 @@ class DarkMode {
       "--nav-el-background",
       " var(--darkest-blue-background)"
     );
-    root.style.setProperty("--nav-border", " var(--light-green)");
+    root.style.setProperty("--nav-border", "white");
     root.style.setProperty("--nav-signup-color", " var(--darkest-blue)");
     root.style.setProperty(
       "--nav-signup-background",

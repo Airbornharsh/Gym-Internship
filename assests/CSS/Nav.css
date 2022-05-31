@@ -44,7 +44,7 @@ nav {
 
   .nav_middle ul li {
     margin: 0;
-    border-bottom: 1px solid var(--nav_border);
+    border-bottom: 1px solid var(--nav-border);
     color: var(--nav-el-color);
     width: 50vw;
     display: flex;

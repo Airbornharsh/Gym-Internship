@@ -3,11 +3,20 @@
 }
 
 #sign_up {
-  width: 60px;
+  width: 70px;
   border-radius: 6px;
   padding: 0 6px;
   font-family: "Cairo";
   cursor: pointer;
+}
+
+#log_out{
+  width: 70px;
+  border-radius: 6px;
+  padding: 0 6px;
+  font-family: "Cairo";
+  cursor: pointer;
+  display: none;
 }
 
 #sign_up_template {
