@@ -30,6 +30,7 @@
 
 :root {
   --logo: #ffa811;
+  --body: #d5f0dc;
   --nav-scroll-background: rgba(26, 36, 47, 0.8);
   --nav-el-color: #d5f0dc;
   --nav-el-background: #202c39;
@@ -164,7 +165,7 @@
 }
 
 body {
-  background-color: var(--lightest_green);
+  background-color: var(--body);
 }
 
 .material-symbols-outlined {
