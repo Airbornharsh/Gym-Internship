@@ -1,0 +1,74 @@
+#contact_us_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60vw;
+}
+
+#contact_us {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+}
+
+#contact_us .name,
+#contact_us .email,
+#contact_us .text {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+}
+
+#contact_us label {
+  width: 100%;
+  text-align: left;
+  color: var(--footer-link);
+  font-size: 0.8rem;
+  font-family: "Kanit";
+}
+
+#contact_us input {
+  background-color: var(--products-background);
+  width: 30vw;
+  max-width: 15rem;
+  margin-bottom: 1rem;
+  border: 1px solid whitesmoke;
+  color: whitesmoke;
+}
+
+#contact_us .text textarea {
+  background-color: var(--products-background);
+  color: whitesmoke;
+  width: 50vw;
+  max-width: 25rem;
+  margin-bottom: 1rem;
+  border: 1px solid whitesmoke;
+}
+
+#contact_button{
+    width: 3.5rem;
+    border-radius: 0.2rem;
+}
+
+#contact_button .button_container{
+}
+
+@media screen and (max-width: 800px) {
+  #contact_us_container {
+    width: 80vw;
+    justify-content: center;
+  }
+  #contact_us {
+    width: 20vw;
+    min-width: 15rem;
+    margin-right: 4rem;
+  }
+  #contact_us .text textarea{
+      width: 30vw;
+      max-width: 25rem;
+      min-width: 15rem;
+
+  }
+}

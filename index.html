@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="/assests/CSS/Product.css" />
     <link rel="stylesheet" href="/assests/CSS/Shopping.css" />
     <link rel="stylesheet" href="/assests/CSS/Footer.css" />
+    <link rel="stylesheet" href="./assests/CSS/contact.css">
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -174,46 +175,46 @@
         <div class="services_bottom center">
           <ul>
             <li class="center">
-                <img
-                  src="./assests/images/servicesImages/history_black_24dp.svg"
-                  alt=""
-                />
-                <p>24 Hours Open</p>
+              <img
+                src="./assests/images/servicesImages/history_black_24dp.svg"
+                alt=""
+              />
+              <p>24 Hours Open</p>
             </li>
             <li class="center">
-                <img
-                  src="./assests/images/servicesImages/sports_gymnastics_FILL0_wght400_GRAD0_opsz48.svg"
-                  alt=""
-                />
-                <p>Wide Area</p>
+              <img
+                src="./assests/images/servicesImages/sports_gymnastics_FILL0_wght400_GRAD0_opsz48.svg"
+                alt=""
+              />
+              <p>Wide Area</p>
             </li>
             <li class="center">
-                <img
-                  src="./assests/images/servicesImages/diversity_3_black_24dp.svg"
-                  alt=""
-                />
-                <p>Good Community</p>
+              <img
+                src="./assests/images/servicesImages/diversity_3_black_24dp.svg"
+                alt=""
+              />
+              <p>Good Community</p>
             </li>
             <li class="center">
-                <img
-                  src="./assests/images/servicesImages/fitness_center_black_24dp.svg"
-                  alt=""
-                />
-                <p>Euipments</p>
+              <img
+                src="./assests/images/servicesImages/fitness_center_black_24dp.svg"
+                alt=""
+              />
+              <p>Euipments</p>
             </li>
             <li class="center">
-                <img
-                  src="./assests/images/servicesImages/sports_kabaddi_black_24dp.svg"
-                  alt=""
-                />
-                <p>Personal Training</p>
+              <img
+                src="./assests/images/servicesImages/sports_kabaddi_black_24dp.svg"
+                alt=""
+              />
+              <p>Personal Training</p>
             </li>
             <li class="center">
-                <img
-                  src="./assests/images/servicesImages/hot_tub_black_24dp.svg"
-                  alt=""
-                />
-                <p>Steam and Sauna</p>
+              <img
+                src="./assests/images/servicesImages/hot_tub_black_24dp.svg"
+                alt=""
+              />
+              <p>Steam and Sauna</p>
             </li>
           </ul>
         </div>
@@ -229,24 +230,46 @@
       </div>
     </main>
     <footer>
+      <div id="contact_us_container">
+        <form id="contact_us">
+          <section class="name">
+            <label for="name">Name</label>
+            <input type="text" placeholder="Name" />
+          </section>
+          <section class="email">
+            <label for="email">Email Id</label>
+            <input type="email" placeholder="Email Id" />
+          </section>
+          <section class="text">
+            <label for="text">Contact</label>
+            <textarea
+              name="text"
+              cols="30"
+              rows="10"
+              placeholder="What do you want to say"
+            ></textarea>
+          </section>
+          <section class="button_container center">
+            <button  id="contact_button">Submit</button>
+          </section>
+        </form>
+      </div>
       <ul class="footer_child_ul">
-        <div class="footer_child_quotes center">
-          <h4>GYMNAISM</h4>
+        <!-- <h4>GYMNAISM</h4>
           <p>
             I have nothing in common with lazy people who blame others for their
             lack of success. Great things come from hard work and perseverance.
             No excuses.
-          </p>
-        </div>
+          </p> -->
         <li class="footer_child_li">
           <ul class="footer_child_child_ul center">
             <li class="footer_child_child_li footer_child_child_heading">
               Social
             </li>
-            <li class="footer_child_child_li"><a href="">Instagram</a></li>
-            <li class="footer_child_child_li"><a href="">Facebook</a></li>
-            <li class="footer_child_child_li"><a href="">Twitter</a></li>
-            <li class="footer_child_child_li"><a href="">Youtube</a></li>
+            <li class="footer_child_child_li center"><a href="">Instagram</a></li>
+            <li class="footer_child_child_li center"><a href="">Facebook</a></li>
+            <li class="footer_child_child_li center"><a href="">Twitter</a></li>
+            <li class="footer_child_child_li center"><a href="">Youtube</a></li>
           </ul>
         </li>
         <li class="footer_child_li">
@@ -254,23 +277,12 @@
             <li class="footer_child_child_li footer_child_child_heading">
               Heading
             </li>
-            <li class="footer_child_child_li">
+            <li class="footer_child_child_li center">
               <a href="https://goo.gl/maps/DbczDkzVAk5b7Mbj7">Location</a>
             </li>
-            <li class="footer_child_child_li">Link 7</li>
-            <li class="footer_child_child_li">Link 8</li>
-            <li class="footer_child_child_li">Link 9</li>
-          </ul>
-        </li>
-        <li class="footer_child_li">
-          <ul class="footer_child_child_ul center">
-            <li class="footer_child_child_li footer_child_child_heading">
-              Heading
-            </li>
-            <li class="footer_child_child_li">Link 11</li>
-            <li class="footer_child_child_li">Link 12</li>
-            <li class="footer_child_child_li">Link 13</li>
-            <li class="footer_child_child_li">Link 14</li>
+            <li class="footer_child_child_li center">Link 7</li>
+            <li class="footer_child_child_li center">Link 8</li>
+            <li class="footer_child_child_li center">Link 9</li>
           </ul>
         </li>
       </ul>
@@ -427,7 +439,7 @@
         </form>
       </div>
     </div>
-     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="./assests/index.js" type="module"></script>
   </body>
 </html>

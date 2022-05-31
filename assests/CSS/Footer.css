@@ -1,7 +1,10 @@
 footer {
-  padding: 5rem 0;
+  padding: 2.5rem 0;
   height: auto;
   background-color: var(--footer-background);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 footer .footer_child_ul {
@@ -9,25 +12,9 @@ footer .footer_child_ul {
   justify-content: space-around;
   align-items: center;
   font-family: "Cairo";
+  width: 40vw;
 }
 
-footer .footer_child_quotes {
-  flex-direction: column;
-  width: 30vw;
-}
-
-footer .footer_child_quotes h4 {
-  transform: scale(1.8);
-  margin-bottom: 10px;
-  color: var(--footer-quotes-heading);
-}
-
-footer .footer_child_quotes p {
-  font-size: 0.8rem;
-  text-align: center;
-  margin-top: 5px;
-  color: var(--footer-quotes-description);
-}
 
 footer .footer_child_li {
   list-style: none;
@@ -56,8 +43,18 @@ footer .footer_child_child_li a {
 }
 
 @media screen and (max-width: 800px) {
+footer{
+  flex-direction: column-reverse;
+  align-items: center;
+}
   footer .footer_child_quotes h4 {
     font-size: 1rem;
+  }
+
+
+  footer .footer_child_ul {
+justify-content: space-between;    
+margin-bottom: 2rem;
   }
 
   footer .footer_child_quotes p {
