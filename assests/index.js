@@ -1,9 +1,9 @@
-import Header from "./Javascript/Header/Header.js";
 import Navigate from "./Javascript/Navigation/Navigate.js";
 import SigningUp from "./Javascript/SigningUp/SigningUp.js";
+import Header from "./Javascript/Header/Header.js";
+import Mode from "./Javascript/Mode/Mode.js";
 import Shopping from "./Javascript/Shopping/Shopping.js";
 import ProductRender from "./Javascript/Products/ProductRender.js";
-import Mode from "./Javascript/Mode/Mode.js";
 
 
 class Working {
