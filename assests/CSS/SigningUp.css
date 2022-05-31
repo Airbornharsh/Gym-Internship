@@ -68,7 +68,7 @@
   font-family: "Rubik";
   font-weight: 600;
   background-color: var(--form-submit-background);
-  color: var(--form-submit-color);
+  color: #0e1819;
   border: 1px solid var(--form-submit-border);
 }
 

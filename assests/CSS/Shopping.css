@@ -144,11 +144,11 @@
 }
 
 #custom_alert {
-  background-color: var(--mode);
+  background-color: var(--about-background);
   position: fixed;
   bottom: 0.5rem;
   font-family: "Archivo Black";
-  color: var(--negative_mode);
+  color: var(--about-top-heading);
   padding: 0.3rem;
   margin: 0% auto;
   left: 50%;

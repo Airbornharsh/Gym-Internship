@@ -35,12 +35,12 @@
   max-width: 15rem;
   margin-bottom: 1rem;
   border: 1px solid whitesmoke;
-  color: whitesmoke;
+  color: var(--about-top-heading);
 }
 
 #contact_us .text textarea {
   background-color: var(--products-background);
-  color: whitesmoke;
+  color: var(--about-top-heading);
   width: 50vw;
   max-width: 25rem;
   margin-bottom: 1rem;
@@ -50,9 +50,6 @@
 #contact_button{
     width: 3.5rem;
     border-radius: 0.2rem;
-}
-
-#contact_button .button_container{
 }
 
 @media screen and (max-width: 800px) {

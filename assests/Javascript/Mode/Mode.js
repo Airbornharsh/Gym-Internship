@@ -63,7 +63,7 @@ class DarkMode {
   }
 
   darkModeColorChange(root) {
-    document.querySelector("body").style.color = "#d1cfcf";
+    document.querySelector("body").style.backgroundColor = "#828282";
     root.style.setProperty("--light-green", " #cd7f13");
     root.style.setProperty("--light-green-background", " #112835");
     root.style.setProperty("--darkest-blue", " #dcedff");
