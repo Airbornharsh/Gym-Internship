@@ -2,7 +2,7 @@ const root = document.querySelector(":root");
 
 const LightModeColor = () => {
   document.querySelector("body").style.backgroundColor = "#d5f0dc";
-  root.style.setProperty("--logo", "#ffa811");
+  root.style.setProperty("--logo", "#00aaff");
   root.style.setProperty("--nav-scroll-background", " rgba(26, 36, 47, 0.8)");
   root.style.setProperty("--nav-el-color", " #d5f0dc");
   root.style.setProperty("--nav-el-background", " #202c39");

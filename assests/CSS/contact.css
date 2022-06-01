@@ -38,6 +38,11 @@
   color: var(--about-top-heading);
 }
 
+#contact_us .email input{
+  width: 40vw;
+  max-width: 20rem;
+}
+
 #contact_us .text textarea {
   background-color: var(--products-background);
   color: var(--about-top-heading);
@@ -50,6 +55,7 @@
 #contact_button{
     width: 3.5rem;
     border-radius: 0.2rem;
+    padding: 0.1rem;
 }
 
 @media screen and (max-width: 800px) {
@@ -62,6 +68,14 @@
     min-width: 15rem;
     margin-right: 4rem;
   }
+
+  #contact_us .email input{
+    width: 30vw;
+    max-width: 20rem;
+    min-width: 12rem;
+  }
+  
+
   #contact_us .text textarea{
       width: 30vw;
       max-width: 25rem;

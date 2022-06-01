@@ -30,6 +30,14 @@ nav {
   cursor: pointer;
 }
 
+#scroll_loading{
+  position: fixed;
+  top: 50px;
+  height: 3px;
+  width: 0vw;
+  background-color: rgb(253, 110, 0);
+}
+
 @media screen and (max-width: 800px) {
   .nav_middle ul {
     display: none;

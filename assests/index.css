@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cairo:wght@700&family=JetBrains+Mono&family=Kanit:wght@300&family=Lato:wght@300&family=Oswald&family=Roboto&family=Roboto+Condensed&family=Roboto+Slab&family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cairo:wght@300&family=JetBrains+Mono&family=Kanit:wght@300&family=Lato:wght@100&family=Oswald&family=Roboto+Condensed&family=Roboto+Slab&family=Roboto:wght@100&family=Rubik&display=swap");
 
 /* @import url(./CSS/Mode.css);
 @import url(./CSS/Nav.css);
@@ -29,7 +29,7 @@
 
 
 :root {
-  --logo: #ffa811;
+  --logo: #00aaff;
   --body: #d5f0dc;
   --nav-scroll-background: rgba(26, 36, 47, 0.8);
   --nav-el-color: #d5f0dc;
@@ -98,7 +98,7 @@
   --mid-blue-green: #44896a;
   --white: rgb(219, 219, 219);
   --black: rgb(212, 212, 212);
-  --logo: #ffa811;
+  --logo: #00aaff;
   --nav-scroll-background: rgba(26, 36, 47, 0.8);
   --nav-el-color: var(--light-green);
   --nav-el-background: var(--darkest-blue-background);

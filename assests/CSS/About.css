@@ -21,6 +21,7 @@
   font-size: 1.3rem;
   text-align: center;
   margin-top: 10px;
+  font-weight: 700;
   color: var(--about-top-description);
 }
 
@@ -55,6 +56,7 @@
 .about_bottom_item p {
   text-align: center;
   font-family: "Cairo";
+  /* font-family: "Roboto"; */
   font-size: 1rem;
   color: var(--about-bottom-description);
 }
@@ -71,6 +73,11 @@
 }
 
 @media screen and (max-width: 600px) {
+
+  #about_container .about_bottom_item img{
+width: 7rem;
+  }
+
   .about_bottom_item_container {
     grid-template-columns: auto;
   }

@@ -21,6 +21,7 @@
   font-size: 1.3rem;
   text-align: center;
   margin-top: 10px;
+  font-weight: 700;
   color: var(--products-top-description);
 }
 
@@ -71,9 +72,10 @@
 .products_bottom ul li .buttons button {
   background-color: var(--products-bottom-el-button-background);
   color: var(--products-bottom-el-button-color);
-  padding: 0.2rem;
+  padding: 0.2rem 0.4rem;
   border-radius: 0.3rem;
   font-family: "Cairo";
+  font-weight: bolder;
   margin: 0 1rem;
   border: 0px;
   cursor: pointer;

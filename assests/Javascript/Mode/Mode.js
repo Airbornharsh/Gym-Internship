@@ -1,7 +1,9 @@
+import NavScroll from "../Navigation/NavScroll.js";
 import LightModeColor from "./LightModeColor.js";
 
-class DarkMode {
+class DarkMode extends NavScroll {
   constructor() {
+    super();
     this.mode = document.getElementById("mode");
     this.logo = document.getElementById("logo");
     this.darkMode = this.mode.querySelector("#dark_mode");
@@ -10,13 +12,17 @@ class DarkMode {
     this.root = document.querySelector(":root");
     this.getRoot = getComputedStyle(this.root);
     this.nav = document.querySelector("nav");
+    this.indicator = document.getElementById("scroll_loading");
     this.check();
     this.clicked();
+    this.scrollIndicator();
   }
 
   check() {
-    if (JSON.parse(localStorage.getItem("isDarkMode")) == null) {
-      console.log("hii");
+    if (JSON.parse(localStorage.getItem("isDarkMode")) == true) {
+      this.darkModeClicked();
+    } else {
+      this.lightModeClicked();
     }
   }
 
@@ -24,8 +30,10 @@ class DarkMode {
     this.mode.addEventListener("click", () => {
       if (this.modeName == "light") {
         this.darkModeClicked();
+        this.scrollIndicator();
       } else if (this.modeName == "dark") {
         this.lightModeClicked();
+        this.scrollIndicator();
       }
     });
   }
@@ -37,7 +45,7 @@ class DarkMode {
     this.darkMode.style.opacity = 1;
     setTimeout(() => {
       // setTimeout(() => {
-        this.mode.style.backgroundColor = "black";
+      this.mode.style.backgroundColor = "black";
       // }, 500);
       this.lightMode.style.display = "none";
       this.darkMode.style.display = "block";
@@ -52,9 +60,7 @@ class DarkMode {
     this.lightMode.style.opacity = 1;
     this.darkMode.style.opacity = 0;
     setTimeout(() => {
-      // setTimeout(() => {
-        this.mode.style.backgroundColor = "white";
-      // }, 500);
+      this.mode.style.backgroundColor = "white";
       this.lightMode.style.display = "block";
       this.darkMode.style.display = "none";
     }, 250);
@@ -71,7 +77,7 @@ class DarkMode {
     root.style.setProperty("--mid-blue-green", " #44896a");
     root.style.setProperty("--white", " rgb(219, 219, 219)");
     root.style.setProperty("--black", " rgb(212, 212, 212)");
-    root.style.setProperty("--logo", "#f29b05");
+    root.style.setProperty("--logo", "#00aaff");
     root.style.setProperty("--nav-scroll-background", " rgba(26, 36, 47, 0.8)");
     root.style.setProperty("--nav-el-color", " var(--light-green)");
     root.style.setProperty(
@@ -184,8 +190,8 @@ class DarkMode {
       "--footer-quotes-description",
       " var(--light-green)"
     );
-    root.style.setProperty("--footer-link-heading", " var(--light-green)");
-    root.style.setProperty("--footer-link", " var(--light-green)");
+    root.style.setProperty("--footer-link-heading", "orange");
+    root.style.setProperty("--footer-link", " orange");
   }
 
   navCheck() {

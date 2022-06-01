@@ -30,15 +30,17 @@ footer .footer_child_child_li {
   list-style: none;
   font-family: "Lato", sans-serif;
   font-size: 0.75rem;
+  font-weight: 900;
 }
 
 footer .footer_child_child_heading {
   font-weight: 1000;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
 }
 
 footer .footer_child_child_li a {
   text-decoration: none;
+  font-weight: 600;
   color: var(--footer-link);
 }
 

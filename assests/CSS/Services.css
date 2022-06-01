@@ -28,6 +28,7 @@
   font-family: "Cairo";
   font-size: 1.3rem;
   text-align: center;
+  font-weight: 700;
   margin-top: 10px;
   color: var(--services-top-description);
 }
