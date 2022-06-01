@@ -1,5 +1,5 @@
 import Navigate from "./Javascript/Navigation/Navigate.js";
-import SigningUp from "./Javascript/SigningUp/SigningUp.js";
+import SigningIn from "./Javascript/Signing/SigningIn.js";
 import Header from "./Javascript/Header/Header.js";
 import Mode from "./Javascript/Mode/Mode.js";
 import Shopping from "./Javascript/Shopping/Shopping.js";
@@ -26,7 +26,7 @@ class Working {
 class App {
   static init() {
     const working = new Working();
-    new SigningUp(working.isLogined);
+    new SigningIn(working.isLogined);
     new Navigate();
     new Header();
     new ProductRender();

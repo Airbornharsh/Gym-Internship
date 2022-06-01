@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="/assests/CSS/Nav.css" />
     <link rel="stylesheet" href="/assests/CSS/Header.css" />
     <link rel="stylesheet" href="/assests/CSS/SigningUp.css" />
+    <link rel="stylesheet" href="./assests/CSS/SigningIn.css">
     <link rel="stylesheet" href="./assests/CSS/Animation.css" />
     <link rel="stylesheet" href="/assests/CSS/About.css" />
     <link rel="stylesheet" href="/assests/CSS/Services.css" />
     <link rel="stylesheet" href="/assests/CSS/Product.css" />
     <link rel="stylesheet" href="/assests/CSS/Shopping.css" />
     <link rel="stylesheet" href="/assests/CSS/Footer.css" />
-    <link rel="stylesheet" href="./assests/CSS/Contact.css">
+    <link rel="stylesheet" href="./assests/CSS/Contact.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -49,15 +50,15 @@
           <li id="nav_about">About</li>
           <li id="nav_services">Services</li>
           <li id="nav_products">Products</li>
-          <li>
+          <li id="sign_container">
             <button id="sign_up" class="center">Sign Up</button>
+            <button id="sign_in">Sign In</button>
             <button id="log_out" class="center">Log Out</button>
           </li>
           <!-- <li><div data-netlify-identity-menu></div></li> -->
         </ul>
       </div>
-      <div id="scroll_loading">
-      </div>
+      <div id="scroll_loading"></div>
     </nav>
     <header>
       <img
@@ -253,7 +254,7 @@
             ></textarea>
           </section>
           <section class="button_container center">
-            <button  id="contact_button">Submit</button>
+            <button id="contact_button">Submit</button>
           </section>
         </form>
       </div>
@@ -269,8 +270,12 @@
             <li class="footer_child_child_li footer_child_child_heading">
               Social
             </li>
-            <li class="footer_child_child_li center"><a href="">Instagram</a></li>
-            <li class="footer_child_child_li center"><a href="">Facebook</a></li>
+            <li class="footer_child_child_li center">
+              <a href="">Instagram</a>
+            </li>
+            <li class="footer_child_child_li center">
+              <a href="">Facebook</a>
+            </li>
             <li class="footer_child_child_li center"><a href="">Twitter</a></li>
             <li class="footer_child_child_li center"><a href="">Youtube</a></li>
           </ul>
@@ -438,7 +443,34 @@
               /></label>
             </li>
           </ul>
-          <button type="submit" id="sign_up_submit">Submit</button>
+          <button id="sign_up_submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div id="sign_in_template" class="center">
+      <div class="sign_in_container center">
+        <form name="Sign In" class="center">
+          <ul>
+            <li class="center_spaceBetween">
+              <label class="center" for="email"
+                >Email:<input
+                  type="email"
+                  name="email"
+                  id="sign_in_email"
+                  placeholder="Email"
+              /></label>
+            </li>
+            <li class="center_spaceBetween">
+              <label class="center" for="password"
+                >Password:<input
+                  type="password"
+                  name="password"
+                  id="sign_in_password"
+                  placeholder="PassWord"
+              /></label>
+            </li>
+          </ul>
+          <button id="sign_in_submit">Submit</button>
         </form>
       </div>
     </div>

@@ -21,11 +21,12 @@ nav {
 
 .nav_middle ul li {
   list-style: none;
-  margin: 0 5vw;
+  margin: 0 4vw;
   /* color: #ff8600; */
   color: var(--nav-el-color);
   /* color: #acacac; */
   font-family: "Cairo";
+  font-weight: 900;
   font-style: normal;
   cursor: pointer;
 }
@@ -36,6 +37,12 @@ nav {
   height: 3px;
   width: 0vw;
   background-color: rgb(253, 110, 0);
+}
+
+@media screen and (max-width:1050px) {
+  .nav_middle ul li {
+    margin: 0 2.5vw;
+  }
 }
 
 @media screen and (max-width: 800px) {

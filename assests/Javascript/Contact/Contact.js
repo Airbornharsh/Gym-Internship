@@ -20,10 +20,8 @@ class Contact {
             text: this.text.value,
           },
         ];
+        this.submittedData = JSON.parse(localStorage.getItem("submittedData"));
         if (this.submittedData) {
-          this.submittedData = JSON.parse(
-            localStorage.getItem("submittedData")
-          );
           this.customAlertFn(
             `Thanks ${this.tempData[0].name} for Sending Message`
           );

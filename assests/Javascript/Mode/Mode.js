@@ -100,7 +100,7 @@ class DarkMode extends NavScroll {
     );
     root.style.setProperty("--form-label", " var(--light-green)");
     root.style.setProperty("--form-input-background", " var(--white)");
-    root.style.setProperty("--form-input-color", " var(--darkest-blue)");
+    root.style.setProperty("--form-input-color", " black");
     root.style.setProperty("--form-submit-background", "var(--white)");
     root.style.setProperty("--form-submit-color", " var(--darkest-blue)");
     root.style.setProperty("--form-submit-border", " var(--black)");
