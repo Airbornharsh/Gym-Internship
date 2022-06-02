@@ -9,14 +9,6 @@ class SigningIn extends SigningUp {
     this.startSigningIn();
   }
 
-  checkSignInClicked() {
-    this.signInFormContainer.style.display = "none";
-    this.signInBt.addEventListener("click", () => {
-      this.signInFormContainer.style.display = "flex";
-      this.displayForm();
-    });
-  }
-
   startSigningIn() {
     this.signInSubmit.addEventListener("click", (event) => {
         event.preventDefault();
@@ -34,7 +26,7 @@ class SigningIn extends SigningUp {
     let name, currentData;
     this.signingData = JSON.parse(localStorage.getItem("airo"));
 
-    if (this.signingData) {
+    if (this.signingData && JSON.parse(localStorage.getItem("isLoggedBefore"))) {
       this.signingData.forEach((Data) => {
         if (Data.email == email) {
           name = Data.name;
@@ -60,7 +52,7 @@ class SigningIn extends SigningUp {
         localStorage.setItem("currentSign", JSON.stringify(currentData));
         this.customAlertFn("Logined");
         localStorage.setItem("isLogined", true);
-        this.Reset();
+        this.Reset("submitted");
       }
     }
   }

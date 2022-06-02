@@ -26,6 +26,8 @@
 
 #sign_up_template {
   padding-top: 100px;
+  display: none;
+  flex-direction: column;
 }
 
 #sign_up_template .sign_up_container {
@@ -75,6 +77,20 @@
   background-color: var(--form-submit-background);
   color: #0e1819;
   border: 1px solid var(--form-submit-border);
+}
+
+#sign_up_navigating {
+  margin-top: 3rem;
+}
+
+#sign_up_navigating button {
+  width: 70px;
+  border-radius: 6px;
+  padding: 0 6px;
+  font-family: "Cairo";
+  font-weight: 900;
+  cursor: pointer;
+  margin: 0 3rem;
 }
 
 @media screen and (max-width: 1050px) {
