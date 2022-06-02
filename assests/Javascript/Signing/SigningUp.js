@@ -70,6 +70,7 @@ class SigningUp extends Form {
       localStorage.setItem("currentSign", JSON.stringify(currentData));
       this.customAlertFn("Registered");
       localStorage.setItem("isLogined", true);
+      this.resettingSignUp();
       this.Reset("submitted");
     } else {
       this.customAlertFn("Email Id Existed");

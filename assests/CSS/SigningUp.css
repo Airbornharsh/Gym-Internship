@@ -44,6 +44,10 @@
   margin: 3rem;
 }
 
+#sign_up_template ul {
+  flex-direction: column;
+}
+
 #sign_up_template form ul li {
   width: 70vw;
   margin-bottom: 2rem;
@@ -53,17 +57,18 @@
 #sign_up_template form ul li label {
   color: var(--form-label);
   font-size: 1.3rem;
-  font-family: "Kanit";
-  font-weight: 900;
+  font-family: Verdana, sans-serif;
+  font-weight: 100;
 }
 
 #sign_up_template form ul li input {
+  width: 20rem;
   font-family: "Rubik";
   font-size: 0.8rem;
-  padding: 2px 0.1rem;
-  position: absolute;
+  padding: 0.6rem 0.5rem;
+  /* position: absolute;
   right: 15vw;
-  width: 16rem;
+  width: 16rem; */
   background-color: var(--form-input-background);
   color: var(--form-input-color);
 }
@@ -88,7 +93,7 @@
   border-radius: 6px;
   padding: 0 6px;
   font-family: "Cairo";
-  font-weight: 900;
+  font-weight: 700;
   cursor: pointer;
   margin: 0 3rem;
 }
@@ -106,18 +111,24 @@
   }
 
   #sign_up_template form ul li label {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 
   #sign_up_template form ul li input {
     width: 13rem;
     font-size: 0.8rem;
+    padding: 0.4rem 0.3rem;
   }
 }
 
 @media screen and (max-width: 600px) {
+  #sign_up_template form ul li {
+    justify-content: center;
+    flex-direction: column;
+  }
+
   #sign_up_template form ul li label {
-    font-size: 0.8rem;
+    font-size: 1.1rem;
   }
 
   #sign_up_template form ul li input {

@@ -14,8 +14,8 @@ class SigningIn extends SigningUp {
         event.preventDefault();
       const email = document.getElementById("sign_in_email");
       const password = document.getElementById("sign_in_password");
-      if (email.value && password) {
-        this.signingIn(email.value, password.value);
+      if (email.value && password.value) {
+        this.signingIn(email.value, password);
       } else {
         this.customAlertFn("Fill it Properly");
       }
@@ -31,12 +31,12 @@ class SigningIn extends SigningUp {
         if (Data.email == email) {
           name = Data.name;
           this.signFound = true;
-          if (Data.password == password) {
+          if (Data.password == password.value) {
             this.signGranted = true;
             currentData = {
               name: name,
               email: email,
-              password: password,
+              password: password.value,
             };
           }
         }
@@ -48,10 +48,16 @@ class SigningIn extends SigningUp {
     } else {
       if (this.signGranted == false) {
         this.customAlertFn("Password Incorrect");
+        const tempColor = password.style.backgroundColor;
+        password.style.backgroundColor = "red";
+        setTimeout(() => {
+          password.style.backgroundColor = tempColor;
+        },1000);
       } else {
         localStorage.setItem("currentSign", JSON.stringify(currentData));
         this.customAlertFn("Logined");
         localStorage.setItem("isLogined", true);
+        this.resettingSignIn();
         this.Reset("submitted");
       }
     }
